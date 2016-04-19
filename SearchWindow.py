@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'SearchWindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.5.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_SearchWindow(object):
+    def setupUi(self, SearchWindow):
+        SearchWindow.setObjectName("SearchWindow")
+        SearchWindow.resize(581, 498)
+        self.searchTable = QtWidgets.QTableWidget(SearchWindow)
+        self.searchTable.setGeometry(QtCore.QRect(5, 1, 571, 341))
+        self.searchTable.setContextMenuPolicy(QtCore.Qt.ActionsContextMenu)
+        self.searchTable.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+        self.searchTable.setTabKeyNavigation(False)
+        self.searchTable.setDragDropOverwriteMode(True)
+        self.searchTable.setAlternatingRowColors(True)
+        self.searchTable.setSelectionMode(QtWidgets.QAbstractItemView.SingleSelection)
+        self.searchTable.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
+        self.searchTable.setObjectName("searchTable")
+        self.searchTable.setColumnCount(5)
+        self.searchTable.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.searchTable.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.searchTable.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.searchTable.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.searchTable.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.searchTable.setHorizontalHeaderItem(4, item)
+        self.searchTable.horizontalHeader().setStretchLastSection(True)
+        self.nameLine = QtWidgets.QLineEdit(SearchWindow)
+        self.nameLine.setGeometry(QtCore.QRect(110, 370, 113, 20))
+        self.nameLine.setObjectName("nameLine")
+        self.jobLine = QtWidgets.QLineEdit(SearchWindow)
+        self.jobLine.setGeometry(QtCore.QRect(110, 410, 113, 20))
+        self.jobLine.setObjectName("jobLine")
+        self.departmentBox = QtWidgets.QComboBox(SearchWindow)
+        self.departmentBox.setGeometry(QtCore.QRect(110, 450, 111, 22))
+        self.departmentBox.setObjectName("departmentBox")
+        self.label = QtWidgets.QLabel(SearchWindow)
+        self.label.setGeometry(QtCore.QRect(20, 370, 47, 13))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(SearchWindow)
+        self.label_2.setGeometry(QtCore.QRect(20, 410, 61, 16))
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(SearchWindow)
+        self.label_3.setGeometry(QtCore.QRect(20, 450, 47, 13))
+        self.label_3.setObjectName("label_3")
+        self.searchButton = QtWidgets.QPushButton(SearchWindow)
+        self.searchButton.setGeometry(QtCore.QRect(390, 380, 75, 23))
+        self.searchButton.setAutoDefault(False)
+        self.searchButton.setObjectName("searchButton")
+        self.exitButton = QtWidgets.QPushButton(SearchWindow)
+        self.exitButton.setGeometry(QtCore.QRect(390, 420, 75, 23))
+        self.exitButton.setAutoDefault(False)
+        self.exitButton.setObjectName("exitButton")
+        self.actionEdit = QtWidgets.QAction(SearchWindow)
+        self.actionEdit.setObjectName("actionEdit")
+        self.actionDelete = QtWidgets.QAction(SearchWindow)
+        self.actionDelete.setObjectName("actionDelete")
+
+        self.retranslateUi(SearchWindow)
+        QtCore.QMetaObject.connectSlotsByName(SearchWindow)
+
+    def retranslateUi(self, SearchWindow):
+        _translate = QtCore.QCoreApplication.translate
+        SearchWindow.setWindowTitle(_translate("SearchWindow", "Поиск сотрудников"))
+        self.searchTable.setSortingEnabled(True)
+        item = self.searchTable.horizontalHeaderItem(0)
+        item.setText(_translate("SearchWindow", "Id"))
+        item = self.searchTable.horizontalHeaderItem(1)
+        item.setText(_translate("SearchWindow", "Имя"))
+        item = self.searchTable.horizontalHeaderItem(2)
+        item.setText(_translate("SearchWindow", "Возраст"))
+        item = self.searchTable.horizontalHeaderItem(3)
+        item.setText(_translate("SearchWindow", "Должность"))
+        item = self.searchTable.horizontalHeaderItem(4)
+        item.setText(_translate("SearchWindow", "Отдел"))
+        self.label.setText(_translate("SearchWindow", "Имя"))
+        self.label_2.setText(_translate("SearchWindow", "Должность"))
+        self.label_3.setText(_translate("SearchWindow", "Отдел"))
+        self.searchButton.setText(_translate("SearchWindow", "Поиск"))
+        self.exitButton.setText(_translate("SearchWindow", "ОК"))
+        self.actionEdit.setText(_translate("SearchWindow", "Изменить"))
+        self.actionDelete.setText(_translate("SearchWindow", "Удалить"))
+
